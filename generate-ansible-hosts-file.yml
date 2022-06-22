@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Template Ansible hosts file
+      template:
+        src: ./files/templates/hosts.j2
+        dest: ./inventory/hosts
+        backup: yes
+
+    - name: Refresh inventory to load newly generated ansible inventory
+      meta: refresh_inventory
