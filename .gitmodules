@@ -1,3 +1,6 @@
 [submodule "ansible_roles/roles/ansible-jenkins-role"]
 	path = ansible_roles/roles/ansible-jenkins-role
 	url = git@github.com:DanielJohnHarty/ansible-jenkins-role.git
+[submodule "ubuntu-add-sudoer"]
+	path = ansible_roles/roles/ubuntu-add-sudoer
+	url = git@github.com:DanielJohnHarty/ubuntu-add-sudoer.git
