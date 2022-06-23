@@ -1,3 +1,4 @@
 inventory/hosts
 .log
 all.yml
+group_vars/*
