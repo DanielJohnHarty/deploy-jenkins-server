@@ -1,0 +1,7 @@
+---
+- hosts: jenkins_server_01
+  become: yes
+  tasks:
+    - name: Ensure pre-requisites exist
+      import_role:
+        name: ubuntu-add-sudoer
