@@ -5,3 +5,10 @@
     - name: Ensure pre-requisites exist
       import_role:
         name: ubuntu-add-sudoer
+
+    - name: Create ca and deploy self signed certificates
+      vars:
+        certs_fqdns: '{{ jenkins_host_domains }}'
+      import_role:
+        name: ansible-certificates-role
+      when: deploy_self_signed_cert
