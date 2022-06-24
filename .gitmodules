@@ -4,6 +4,3 @@
 [submodule "ubuntu-add-sudoer"]
 	path = ansible_roles/roles/ubuntu-add-sudoer
 	url = git@github.com:DanielJohnHarty/ubuntu-add-sudoer.git
-[submodule "ansible_roles/roles/ansible-letsencrypt-role"]
-	path = ansible_roles/roles/ansible-letsencrypt-role
-	url = git@github.com:DanielJohnHarty/ansible-letsencrypt-role.git
