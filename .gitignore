@@ -2,3 +2,4 @@ inventory/hosts
 .log
 all.yml
 group_vars/*
+files/certs/
