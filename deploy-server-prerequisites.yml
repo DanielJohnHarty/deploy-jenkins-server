@@ -15,7 +15,7 @@
     - name: Create ca and deploy self signed certificates
       vars:
         certs_fqdns:
-          - '{{ domain }}'
+          - '{{ fqdn }}'
       import_role:
         name: ansible-certificates-role
       when: deploy_self_signed_cert
