@@ -14,7 +14,8 @@
 
     - name: Create ca and deploy self signed certificates
       vars:
-        certs_fqdns: '{{ jenkins_host_domains }}'
+        certs_fqdns:
+          - '{{ domain }}'
       import_role:
         name: ansible-certificates-role
       when: deploy_self_signed_cert
