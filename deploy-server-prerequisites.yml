@@ -6,6 +6,12 @@
       import_role:
         name: ubuntu-add-sudoer
 
+    - name: Install Java recommended in ansible-jenkins-role
+      apt:
+        name: openjdk-11-jre
+        state: present
+        update_cache: yes
+
     - name: Create ca and deploy self signed certificates
       vars:
         certs_fqdns: '{{ jenkins_host_domains }}'
