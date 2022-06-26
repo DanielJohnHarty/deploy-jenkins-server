@@ -1,7 +1,7 @@
 ---
 - name: Deploy jenkins using role
-  hosts: jenkins_server
+  hosts: jenkins_controller
   become: yes
   tasks:
     - import_role:
-        name: ansible-jenkins-role
+        name: ansible-jenkins-role/controller
