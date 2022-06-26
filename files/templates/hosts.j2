@@ -1,5 +1,7 @@
 [all]
-jenkins_server_01 ansible_host={{ JENKINS_HOST_IP }} ansible_connection=ssh ansible_user={{ JENKINS_HOST_USER }} ansible_ssh_private_key_file={{ JENKINS_SERVER_SSH_KEY }}
+node_01 ansible_host= fqdn= ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=
+node_02 ansible_host= fqdn= ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=
 
-[jenkins_server]
-jenkins_server_01
+
+[jenkins_controller]
+node_01
