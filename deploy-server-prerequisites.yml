@@ -2,9 +2,14 @@
 - hosts: all
   become: yes
   tasks:
-    - name: Ensure pre-requisites exist
+    - name: Add jenkins user
       import_role:
         name: ubuntu-add-sudoer
+      vars:
+        username: jenkins
+        user_comment: jenkins user
+        sudoer: no
+        passwordless_sudo: no
 
     - name: Install Java recommended in ansible-jenkins-role
       apt:
