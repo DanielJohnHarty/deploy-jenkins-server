@@ -1,5 +1,5 @@
 ---
-- name: Deploy jenkins using role
+- name: Deploy jenkins controller
   hosts: jenkins_controller
   become: yes
   tasks:
